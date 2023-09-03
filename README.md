@@ -25,9 +25,7 @@
 
 Install dependencies: 
 
-```
 npm install
-```
 
 Deploy to http://localhost:3000
 
