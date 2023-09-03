@@ -27,6 +27,9 @@ Install dependencies:
 
 npm install
 
-Deploy to http://localhost:3000
+Run project: 
 
 npm start
+
+The project will deploy to http://localhost:3000
+
