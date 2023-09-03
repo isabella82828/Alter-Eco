@@ -21,4 +21,8 @@ The purpose of creating Alter-Eco was to inspire and educate children about the 
 
 Install dependencies: 
 
-('npm start')
+npm install
+
+Deploy to http://localhost:3000
+
+npm start
