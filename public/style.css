@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Alter-Eco</title>
+  <link rel="shortcut icon" type="image/png" href="unknown.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    
+    body {
+      margin: 2rem;
+      text-align: left;
+      background: #ffffff;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 100;
+    }
+
+    h1 {
+      color: #28ABB9;
+      font-weight: 80px;
+      font-size: 20px;
+      margin: 45px 0px 20px;
+    }
+
+    h2 {
+      position: relative;
+      text-align: center;
+      color: #28ABB9;
+      font-size: 3rem;
+    }
+
+    #canvas1 {
+      width: 800px;
+      height: 500px;
+      border: 1px solid gray;
+      background: #28ABB9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #clockdiv {
+      color: #ffffff;
+      display: inline-block;
+      font-weight: normal;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    #clockdiv>div {
+      padding: 10px;
+      border-radius: 5px;
+      background: #28ABB9;
+      display: inline-block;
+    }
+
+    #clockdiv div>span {
+      padding: 15px;
+      border-radius: 5px;
+      background: #61cad6;
+      display: inline-block;
+    }
+
+    .smalltext {
+      font-family: 'Courier New', Courier, monospace;
+      padding-top: 5px;
+      font-size: 16px;
+    }
+
+    #modal-container {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #modal-container.show {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .modal {
+      position: relative;
+      width: 60%;
+      margin: auto;
+      background-color: white;
+      font-size: 1.3rem;
+      top: 20%;
+      padding: 3rem 10rem;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background-color: #0b866c;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+      padding: 10px 25px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: medium;
+      color: white;
+    }
+
+/* Add this style for the logo image */
+.nav-logo {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add spacing between the logo and navigation links */
+}
+
+/* Existing styles for the navigation bar */
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 0px 0;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px; /* Add 30px bottom margin */
+  }
+
+.nav-bar li {
+  float: left;
+}
+
+.nav-bar li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-bar li a:hover {
+  color: #28ABB9;
+  font-size: 18px;
+}
+
+
+    #open {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li id="calendar-tab"><a href="#" onclick="openTab('calendar-content')">Calendar</a></li>
+    </ul>
+  </nav>
+
+  <h2>About Alter-Eco</h2>
+  <p>
+    Add your about content here.
+  </p>
+
+  <!-- Calendar tab content -->
+  <div id="calendar-content" class="tab-content">
+    <h2>Calendar</h2>
+    <div id="calendar"></div>
+  </div>
+
+  <a href="about.html">Go back to Home</a>
+
+  <script>
+    function openTab(tabId) {
+      var tabContent = document.getElementById(tabId);
+      tabContent.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

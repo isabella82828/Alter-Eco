@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alter-Eco | Chat</title>
+    <link rel="icon" href="/img/favicon.png" sizes="15x15" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <style>
+        /* CSS to style the navigation bar */
+        .navbar {
+            background-color: #ffffff;
+            padding: 10px 0;
+            display: flex;
+            align-items: center; /* Vertically center align content */
+        }
+
+        /* Style the "Let's Play!" button in the navbar */
+        .navbar-button {
+            background-color: #ffffff;
+            border: none;
+            color: #000000;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease; /* Add a color transition */
+        }
+
+        /* Add a hover effect to change text color to blue */
+        .navbar-button:hover {
+            color: #28ABB9;
+        }
+
+        /* Style the "Chat" button in the navbar */
+        .chat-button {
+            background-color: #ffffff;
+            border: none;
+            color: #000000;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease; /* Add a color transition */
+        }
+
+        /* Add a hover effect to change text color to blue */
+        .chat-button:hover {
+            color: #28ABB9;
+        }
+
+        /* Style the favicon */
+        .navbar-logo {
+            margin-left: 10px; /* Add margin to the left of the logo */
+        }
+
+        /* Add margin to the right of the "Let's Play!" button */
+        .play-button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="/img/favicon.png" alt="Logo" class="navbar-logo" width="80" height="80" /> <!-- Favicon as logo -->
+    <!-- "Let's Play!" button placed in the navbar -->
+    <a href="play.html" class="navbar-button play-button">Let's Play!</a>
+    <!-- "Chat" button now links to "index.html" -->
+    <a href="index.html" class="chat-button">Chat</a>
+</div>
+
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <h1>Join 💬</h1>
+            <form action="/chat.html">
+                <label>Display name</label>
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Display name"
+                    required
+                    autocomplete="off"
+                />
+                <label>Room</label>
+                <input
+                    type="text"
+                    name="room"
+                    placeholder="Room"
+                    required
+                    autocomplete="off"
+                />
+                <button>Join</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

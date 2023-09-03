@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alter-Eco | Let's Play!</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        h2 {
+            margin-top: -70px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+        .status-container {
+            margin-bottom: 1000px;
+        }
+
+        .how-to-play-button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        #how-to-play-button {
+            background-color: #28ABB9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-bar">
+            <li>
+                <img src="/img/favicon.png" alt="Logo" class="navbar-logo" width="80" height="80" style="margin-top: -7px;" />
+            </li>
+          
+            <li><a href="play.html">Let's Play!</a></li>
+            <li><a href="index.html">Chat</a></li>
+        </ul>
+    </nav> 
+
+
+    <div class="how-to-play-button-container">
+        <button id="how-to-play-button">How to Play</button>
+    </div>
+
+    <div class="status-container">
+        <h1>Timer</h1>
+        <div id="clockdiv">
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">seconds</div>
+            </div>
+        </div>
+
+        <h1>Score</h1>
+        <div id="clockdiv">
+            <div>
+                <p id="score"> 0 </p>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas1">
+        <img id="turtle" src="img/spritesheet_turtle.png" />
+        <img id="water_bottle" src="img/fall_objects/object_bottle.png">
+        <img id="plastic_bag" src="img/fall_objects/object_bag.png">
+        <img id="messy_can" src="img/fall_objects/object_can_messy.png">
+        <img id="can" src="img/fall_objects/object_can.png">
+        <img id="battery" src="img/fall_objects/object_battery.png">
+        <img id="banana" src="img/fall_objects/object_banana.png">
+    </canvas>
+
+    <div id="modal-container">
+        <div class="modal">
+            <h1>Welcome to Alter-Eco!</h1>
+            <br>
+            <p>
+                You have 45 seconds to direct the Eco-Turtle towards the recyclable items falling from the sky so that it can catch them in the recycling
+                bin! This will increase your score by 5 points ⭐ <br><br> Remember not to collect the non-recycled objects, or your
+                score will decrease by 10 points. <br><br>
+                Try to beat your score!
+            </p>
+            <br>
+            <br>
+            <button id="close">
+                Let's get recyling!
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const howToPlayButton = document.getElementById("how-to-play-button");
+        const container = document.getElementById("modal-container");
+        const close = document.getElementById("close");
+
+        howToPlayButton.addEventListener('click', () => {
+            container.classList.add('show');
+        });
+
+        close.addEventListener('click', () => {
+            container.classList.remove('show');
+        });
+
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
