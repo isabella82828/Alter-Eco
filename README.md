@@ -1,6 +1,8 @@
 # Alter-Eco
 
 🌍 Welcome to Alter-Eco, your gateway to a sustainable and eco-friendly world!
+![Alter-Eco Logo](/img/favicon.png)
+
 
 ## Motivation
 ♻️ The purpose of creating Alter-Eco was to inspire and educate children about the importance of sustainable practices and the power of recycling. With Alter-Eco, the responsible disposal of waste can become more instinctive and sustainable, helping to reduce your carbon footprint. 
