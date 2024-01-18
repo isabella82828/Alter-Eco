@@ -1,5 +1,3 @@
-
-![Alter-Eco Logo](public/img/favicon.png)
 <p align="center">
   <img src="public/img/favicon.png" alt="Alter-Eco Logo">
 </p>
