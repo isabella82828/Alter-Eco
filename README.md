@@ -1,6 +1,8 @@
 
 ![Alter-Eco Logo](public/img/favicon.png)
-
+<p align="center">
+  <img src="public/img/favicon.png" alt="Alter-Eco Logo">
+</p>
 
 ## Motivation
 ♻️ The purpose of creating Alter-Eco was to inspire and educate children about the importance of sustainable practices and the power of recycling. With Alter-Eco, the responsible disposal of waste can become more instinctive and sustainable, helping to reduce your carbon footprint. 
