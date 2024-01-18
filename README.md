@@ -1,4 +1,3 @@
-# Alter-Eco
 
 ![Alter-Eco Logo](public/img/favicon.png)
 
