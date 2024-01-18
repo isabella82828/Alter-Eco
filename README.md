@@ -1,6 +1,5 @@
 # Alter-Eco
 
-🌍 Welcome to Alter-Eco, your gateway to a sustainable and eco-friendly world!
 ![Alter-Eco Logo](public/img/favicon.png)
 
 
